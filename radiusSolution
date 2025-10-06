@@ -1,0 +1,26 @@
+using System;
+
+namespace Revenue
+{
+    internal class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Profit Calculator Program");
+
+            // Prompt and convert revenue directly
+            Console.Write("Enter Revenue: ");
+            double revenue = Convert.ToDouble(Console.ReadLine());
+
+            // Prompt and convert costs directly
+            Console.Write("Enter Costs: ");
+            double costs = Convert.ToDouble(Console.ReadLine());
+
+            // Calculate profit
+            double profit = revenue - costs;
+
+            // Display result
+            Console.WriteLine($"YOUR PROFIT IS: {profit}");
+        }
+    }
+}
